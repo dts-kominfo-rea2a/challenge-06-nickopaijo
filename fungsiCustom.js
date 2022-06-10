@@ -31,10 +31,6 @@ const bacaData = (fnCallback) => {
       }
 
       fs.readFile(file3, "utf-8", (err, data3) => {
-        if (err) {
-          return console.log("Error data 3" + err);
-        }
-
         const parseData1 = JSON.parse(data1);
         const message1 = getLastWord(parseData1.message);
 
