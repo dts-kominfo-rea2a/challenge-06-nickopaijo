@@ -44,7 +44,7 @@ const bacaData = (fnCallback) => {
         const parseData3 = JSON.parse(data3);
         const message3 = getLastWord(parseData3[0].data.message);
 
-        fnCallback([message1, message2, message3]);
+        fnCallback(err, [message1, message2, message3]);
       });
     });
   });
